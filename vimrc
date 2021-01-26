@@ -8,7 +8,7 @@ Plug 'tpope/vim-liquid'
 Plug 'lumiliet/vim-twig'
 call plug#end()
 
-" Colorscheme seting
+" Colorscheme setting
 colorscheme vim-monokai-tasty
 let g:lightline = { 'colorscheme': 'monokai_tasty' }  " lightline theme
 
@@ -19,15 +19,14 @@ set shiftwidth=4
 set number
 set mouse=a
 
-" Insert, Delete and Copy+Paste"
+" Delete the current line"
 nmap - dd
-nmap \ -
 
-"To save, ctrl+s
+" To save with simply Ctrl+s
 nmap <c-s> :w<CR> 
 imap <c-s> <Esc>:w<CR>a
 
-"DIY autoclosing
+" DIY autoclosing
 inoremap (; ();<left><left>
 inoremap [; [];<left><left>
 inoremap ( ()<left>
@@ -59,3 +58,6 @@ set wildmenu
 
 " Show editing mode
 set showmode
+
+" Don't write swap file
+set noswapfile
